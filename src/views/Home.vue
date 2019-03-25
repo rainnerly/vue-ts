@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-   I am home
+   I am home 
   <hello-world :msg="msg"></hello-world>
   </div>
 </template>
