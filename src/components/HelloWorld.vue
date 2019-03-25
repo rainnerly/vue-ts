@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    HelloWorld
+    HelloWorld  
+    <span class="red">{{msg}}</span>
   </div>
 </template>
 
@@ -28,5 +29,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.red{
+  color: red;
+  font-size: 20px;
 }
 </style>

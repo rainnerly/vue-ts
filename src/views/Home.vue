@@ -1,6 +1,7 @@
 <template>
   <div class="home">
    I am home
+  <hello-world :msg="msg"></hello-world>
   </div>
 </template>
 
@@ -8,10 +9,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
+
 @Component({
   components: {
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  private msg: string = 'hmhm';
+}
 </script>
