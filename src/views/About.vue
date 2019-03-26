@@ -7,9 +7,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class About extends Vue{
+export default class About extends Vue {
   public mounted() {
-    console.log(1111) 
+    // console.log(1111)
   }
 }
 </script>

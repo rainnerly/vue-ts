@@ -1,21 +1,34 @@
 <template>
   <div class="home">
-   I am home 
-  <hello-world :msg="msg"></hello-world>
+    <div class="left">
+      <navbar></navbar>
+    </div>
+    <div class="content"></div>
+  <!-- <hello-world :msg="msg"></hello-world> -->
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import navbar from '@/components/navBar.vue'; // @ is an alias to /src
 
 
 @Component({
   components: {
     HelloWorld,
+    navbar,
   },
 })
 export default class Home extends Vue {
   private msg: string = 'hmhm';
 }
 </script>
+<style lang="scss" scoped>
+.left{
+  width: 300px;
+  height: 100%;
+  background-color: #ccc;
+}
+</style>
+
