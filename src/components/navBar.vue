@@ -55,12 +55,5 @@ export default class NavBar extends Vue {
     console.log(key, keyPath);
   }
 }
-@Demo
-export class cc {
 
-}
-function Demo(target) {
-target.a = 111;
-}
-console.log(cc.a, 'sss');
 </script>
