@@ -49,10 +49,10 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class NavBar extends Vue {
   public handleOpen(key: string, keyPath: any) {
-    console.log(key, keyPath);
+    // console.log(key, keyPath);
   }
   public handleClose(key: string, keyPath: any) {
-    console.log(key, keyPath);
+    // console.log(key, keyPath);
   }
 }
 

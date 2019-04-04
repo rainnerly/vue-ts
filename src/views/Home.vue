@@ -1,9 +1,12 @@
 <template>
   <div class="home">
-    <div class="left">
+    <headbar>
+      <template v-slot:content>22222</template>
+    </headbar>
+    <!-- <div class="left">
       <navbar></navbar>
     </div>
-    <div class="content"></div>
+    <div class="content"></div> -->
   <!-- <hello-world :msg="msg"></hello-world> -->
   </div>
 </template>
@@ -12,12 +15,14 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import navbar from '@/components/navBar.vue'; // @ is an alias to /src
+import headbar from '@/components/HeadBar.vue'; // @ is an alias to /src
 
 
 @Component({
   components: {
     HelloWorld,
     navbar,
+    headbar,
   },
 })
 export default class Home extends Vue {

@@ -1,6 +1,6 @@
 {
   "editor.tabSize": 2, //tab缩进
   "editor.mouseWheelZoom": true,
-  "tslint.autoFixOnSave": true,
+  // "tslint.autoFixOnSave": true,
   "editor.fontSize": 16
 }
