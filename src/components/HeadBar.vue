@@ -4,9 +4,9 @@
       This is the header！
     </header>
     <slot name="content"></slot>
-    <footer>
+    <!-- <footer>
       This is the footer!
-    </footer>
+    </footer> -->
   </div>
 </template>
 <script lang="ts">
@@ -28,9 +28,9 @@ export default class Home extends Vue {
   header{
     top: 0;
   }
-  footer{
-    bottom: 0;
-  }
+  // footer{
+  //   bottom: 0;
+  // }
 }
 </style>
 
