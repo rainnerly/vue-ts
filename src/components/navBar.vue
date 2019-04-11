@@ -9,7 +9,8 @@
         @close="handleClose"
         background-color="#545c64"
         text-color="#fff"
-        active-text-color="#ffd04b">
+        active-text-color="#ffd04b"
+        router>
         <el-submenu index="1">
           <template slot="title">
             <i class="el-icon-location"></i>
@@ -28,7 +29,7 @@
             <el-menu-item index="1-4-1">选项1</el-menu-item>
           </el-submenu>
         </el-submenu>
-        <el-menu-item index="2">
+        <el-menu-item index="/about">
           <i class="el-icon-menu"></i>
           <span slot="title">导航二</span>
         </el-menu-item>
@@ -36,7 +37,7 @@
           <i class="el-icon-document"></i>
           <span slot="title">导航三</span>
         </el-menu-item>
-        <el-menu-item index="4">
+        <el-menu-item index="/about">
           <i class="el-icon-setting"></i>
           <span slot="title">导航四</span>
         </el-menu-item>
