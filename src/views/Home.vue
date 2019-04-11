@@ -1,21 +1,17 @@
 <template>
   <div class="home">
+    <div class="left">
+      <navbar></navbar>
+    </div>
     <headbar>
       <template v-slot:content>
         <div class="main-content">
-          <div class="left">
-            <navbar></navbar>
-          </div>
           <div class="content">
             <router-view></router-view>
           </div>
         </div>
       </template>
     </headbar>
-    <!-- <div class="left">
-    </div>
-    <div class="content"></div>-->
-    <!-- <hello-world :msg="msg"></hello-world> -->
   </div>
 </template>
 
@@ -37,14 +33,20 @@ export default class Home extends Vue {
 }
 </script>
 <style lang="scss" scoped>
-.main-content{
+.main-content {
   width: 100%;
   height: calc(100% - 100px);
 }
 .left {
-  width: 300px;
-  height: 100%;
-  // background-color: #ccc;
+  width: 250px;
+  height: 100vh;
+  text-align: left;
+  background-color: #545c64;
+  /deep/ {
+    .el-menu {
+      border-right: none;
+    }
+  }
 }
 </style>
 

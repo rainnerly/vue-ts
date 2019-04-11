@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="12">
+    <el-col>
       <h5>自定义颜色</h5>
       <el-menu
         default-active="2"
@@ -46,7 +46,7 @@
   </el-row>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class NavBar extends Vue {
   public handleOpen(key: string, keyPath: any) {
@@ -56,5 +56,4 @@ export default class NavBar extends Vue {
     // console.log(key, keyPath);
   }
 }
-
 </script>
