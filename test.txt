@@ -1,1 +1,46 @@
+1、
+  var bb = '12'
+  var obj = {
+    bb: 13,
+    fn: function(){
+      console.log(this.bb)
+    }
+  }
+  var a = obj.fn;
+a() //打印出什么
+2、把数组 var arr = [12, 34, 45, 35, [23, 5], [1, 34, [1, 3, 4]]]转为一维数组
+3、
+  for(var i = 0; i < 10;i++){
+    setTimeout(function(){}(
+    console.log(i)
+    ),0)
+  }
+  4、写一个函数实现下划线和驼峰命名的变量变成驼峰命名和下划线（好像要写两三个实现方法）
+  5、写一个数组去重的函数（好像要写两三个实现方法）
+  
+  
+  1、12（作用域问题）
+  2、递归 
+  
+  var arr = []
+function one(array){
+	for(var i = 0; i< array.length; i++){
+		Array.isArray(array[i]) ? one(array[i]) : arr.push(array[i])
+	}
+} (可以去看一下数组的判断方法）
 
+3、10 异步问题
+4、function demo(str) {
+  if(a.startsWith('_')){
+  return a.substr(1) + '_'
+  }
+}
+5、
+var arr1 = []
+function demo(arr){
+  for( var i = 0; i< arr.length;i++)){
+    if(!arr1.includes(arr[i]){
+    arr1.push(arr[i])
+  }
+  }
+}
